@@ -39,7 +39,8 @@ covered by the following copyright and permission notice:
 #define ONLINE_H
 
 #include <math.h>
-#include <values.h>
+#include <float.h>
+#include <limits.h>
 #include <iostream>
 #include <string>
 #include <vector>

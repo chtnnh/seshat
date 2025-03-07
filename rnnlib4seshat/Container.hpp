@@ -108,9 +108,9 @@ template<class T> struct Vector: public vector<T> {
     this->insert(this->begin(), t);
   }
   T& pop_front() {
-    T& front = front();
-    erase(this->begin());
-    return front;
+    T& result = this->front();
+    this->erase(this->begin());
+    return result;
   }
   View<T> slice(int first = 0, int last = numeric_limits<int>::max()) {
     first = bound(first, 0, (int)this->size());
